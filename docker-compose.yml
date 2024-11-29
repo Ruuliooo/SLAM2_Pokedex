@@ -1,0 +1,10 @@
+services:
+  pokedex-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./BACKEND:/BACKEND
+      - /BACKEND/node_modules
+    ports:
+      - "5001:5001"
